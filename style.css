@@ -1,0 +1,103 @@
+:root {
+  --pale_blue: hsl(225, 100%, 94%);
+  --brigt_blue: hsl(245, 75%, 52%);
+  --very_paleblue: hsl(225, 100%, 98%);
+  --desaturated_b: hsl(224, 23%, 55%);
+  --dark_blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--pale_blue);
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+button {
+  color: inherit;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: white;
+  max-width: 350px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-content img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.content {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content h2 {
+  color: var(--dark_blue);
+  margin: 0;
+  font-size: 140%;
+}
+.content .text-description {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: gray;
+}
+.music_player {
+  width: 100%;
+  background-color: var(--pale_blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+}
+.music_description * {
+  margin: 0;
+}
+.music_description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.change_btn {
+  color: var(--brigt_blue);
+  font-weight: 700;
+  border-bottom: 2px solid var(--brigt_blue);
+}
+.pay_btn {
+  background-color: var(--brigt_blue);
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  margin: 20px 0 20px 0;
+  box-shadow: hsla(245, 75%, 52%, 0.2) 0px 8px 24px;
+}
+.cancel_btn {
+  font-weight: 500;
+  color: gray;
+}
+@media screen and (min-width: 375px) {
+}
