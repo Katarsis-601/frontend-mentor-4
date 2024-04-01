@@ -16,6 +16,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1em;
@@ -45,6 +46,10 @@ img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.music_player img {
+  border-radius: 30px;
+  margin-right: 10px;
+}
 .content {
   display: flex;
   padding: 30px;
@@ -65,8 +70,8 @@ img {
 }
 .music_player {
   width: 100%;
-  background-color: var(--pale_blue);
   display: flex;
+  background-color: var(--very_paleblue);
   align-items: center;
   justify-content: space-between;
   padding: 10px;
@@ -74,6 +79,14 @@ img {
 }
 .music_description * {
   margin: 0;
+}
+.music_player h5 {
+  color: var(--dark_blue);
+}
+.music_player p {
+  font-size: 70%;
+  font-weight: 700;
+  color: gray;
 }
 .music_description {
   display: flex;
@@ -83,7 +96,8 @@ img {
 .change_btn {
   color: var(--brigt_blue);
   font-weight: 700;
-  border-bottom: 2px solid var(--brigt_blue);
+  font-size: 70%;
+  margin: 0;
 }
 .pay_btn {
   background-color: var(--brigt_blue);
@@ -100,4 +114,15 @@ img {
   color: gray;
 }
 @media screen and (min-width: 375px) {
+  body {
+    height: auto;
+  }
+  .card-content {
+    width: 80%;
+    margin: 100px 0;
+  }
+  .attribution {
+    margin: 10px;
+    font-size: 50%;
+  }
 }
